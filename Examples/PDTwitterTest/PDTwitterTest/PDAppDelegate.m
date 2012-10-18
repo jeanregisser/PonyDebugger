@@ -51,8 +51,12 @@
     [debugger enableViewHierarchyDebugging];
     [debugger setDisplayedViewAttributeKeyPaths:@[@"frame", @"hidden", @"alpha", @"opaque"]];
     
-    // Connect on launch.
-    [debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
+    // Auto connect via bonjour discovery
+    [debugger autoConnect];
+    // Or to a specific ponyd bonjour service
+    //[debugger autoConnectToBonjourServiceNamed:@"MY PONY"];
+    // Or connect to a specific host
+    //[debugger connectToURL:[NSURL URLWithString:@"ws://localhost:9000/device"]];
     
 #endif
     
