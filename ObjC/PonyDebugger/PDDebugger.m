@@ -21,8 +21,8 @@
 #import "PDRuntimeDomainController.h"
 #import "PDPageDomainController.h"
 #import "PDIndexedDBDomainController.h"
-#import "NSData+PDB64Additions.h"
 #import "PDDOMDomainController.h"
+#import "NSData+PDB64Additions.h"
 
 
 static NSString *const PDClientIDKey = @"com.squareup.PDDebugger.clientID";
